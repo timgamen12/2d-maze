@@ -1,0 +1,55 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.maze-container {
+  position: relative;
+  text-align: center;
+}
+
+#mazeCanvas {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+#level-counter {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  color: #333;
+  z-index: 2;
+}
+
+button.hidden {
+  display: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  #level-counter {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
